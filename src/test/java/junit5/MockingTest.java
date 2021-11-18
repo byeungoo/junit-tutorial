@@ -37,8 +37,11 @@ public class MockingTest {
         Long resultItemId = itemService.saveItem();
 
         //then
-
         Assertions.assertThat(resultItemId).isEqualTo(itemId);
+    }
+
+    class Item {
+        private Long id;
     }
 
     class ItemRepository {
